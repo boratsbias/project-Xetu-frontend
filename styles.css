@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f9fa; /* Light Gray */
+}
+
+.hero {
+  background-color: #e3f2fd; /* Light Blue */
+}
+
+.hero h1 {
+  font-size: 4em; /* Larger Welcome Text */
+}
+
+.bg-light-gray {
+  background-color: #f8f9fa; /* Light Gray */
+}
+
+.bg-light-blue {
+  background-color: #e3f2fd; /* Light Blue */
+}
+
+.bg-dark {
+  background-color: #343a40; /* Dark Gray */
+}
+
+section {
+  padding: 60px 20px;
+}
+
+h1, h2 {
+  color: #343a40; /* Dark Gray */
+}
+
+.btn-dark {
+  background-color: #343a40; /* Dark Gray */
+  color: white;
+  border-color: #343a40; /* Dark Gray */
+}
+
+.btn-dark:hover {
+  background-color: #23272b; /* Even Darker Gray */
+}
+
+.social-media a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
