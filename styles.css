@@ -3,18 +3,51 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #333; /* Dark Gray for better readability */
 }
 
 header {
   background-color: #f8f9fa; /* Light Gray */
+  border-bottom: 1px solid #ddd; /* Subtle border for definition */
+}
+
+header .logo {
+  max-height: 60px; /* Adjust logo size */
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: #343a40; /* Dark Gray */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Bootstrap Blue for hover effect */
 }
 
 .hero {
   background-color: #e3f2fd; /* Light Blue */
+  color: #343a40; /* Dark Gray */
+  text-align: center;
+  padding: 80px 20px; /* Larger padding for hero section */
 }
 
 .hero h1 {
-  font-size: 4em; /* Larger Welcome Text */
+  font-size: 3.5em; /* Larger font size for better visibility */
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em; /* Slightly larger text for readability */
 }
 
 .bg-light-gray {
@@ -27,6 +60,7 @@ header {
 
 .bg-dark {
   background-color: #343a40; /* Dark Gray */
+  color: #fff;
 }
 
 section {
@@ -35,6 +69,11 @@ section {
 
 h1, h2 {
   color: #343a40; /* Dark Gray */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Slightly smaller than h1 */
 }
 
 .btn-dark {
@@ -47,11 +86,42 @@ h1, h2 {
   background-color: #23272b; /* Even Darker Gray */
 }
 
+.social-media {
+  margin-top: 20px;
+}
+
 .social-media a {
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 10px;
 }
 
 .social-media a:hover {
   text-decoration: underline;
+}
+
+.img-fluid {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto;
+}
+
+img {
+  max-width: 80%; /* Adjust to make images more eye-catching */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em; /* Responsive font size for smaller screens */
+  }
+
+  .hero p {
+    font-size: 1.25em; /* Responsive font size */
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
