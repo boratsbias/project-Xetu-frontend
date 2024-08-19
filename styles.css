@@ -1,127 +1,57 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333; /* Dark Gray for better readability */
+/* General styles */
+.navbar-toggler {
+  border: none;
 }
 
-header {
-  background-color: #f8f9fa; /* Light Gray */
-  border-bottom: 1px solid #ddd; /* Subtle border for definition */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23000000" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
-header .logo {
-  max-height: 60px; /* Adjust logo size */
+.navbar-collapse {
+  background-color: #e3f2fd; /* Light Blue */
 }
 
-.nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-item {
-  display: inline;
-}
-
-.nav-link {
+.navbar-nav .nav-link {
   color: #343a40; /* Dark Gray */
-  font-weight: bold;
 }
 
-.nav-link:hover {
-  color: #007bff; /* Bootstrap Blue for hover effect */
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Blue for hover effect */
 }
 
+/* Logo styles */
+.logo {
+  width: 100px; /* Adjust width as needed */
+}
+
+/* Hero section */
 .hero {
   background-color: #e3f2fd; /* Light Blue */
   color: #343a40; /* Dark Gray */
-  text-align: center;
-  padding: 80px 20px; /* Larger padding for hero section */
 }
 
-.hero h1 {
-  font-size: 3.5em; /* Larger font size for better visibility */
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.5em; /* Slightly larger text for readability */
-}
-
+/* About, Plans, Community sections */
 .bg-light-gray {
   background-color: #f8f9fa; /* Light Gray */
 }
 
-.bg-light-blue {
-  background-color: #e3f2fd; /* Light Blue */
+.display-4 {
+  font-size: 2.5rem; /* Adjust font size for headings */
 }
 
-.bg-dark {
-  background-color: #343a40; /* Dark Gray */
-  color: #fff;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-h1, h2 {
-  color: #343a40; /* Dark Gray */
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 2.5em; /* Slightly smaller than h1 */
-}
-
-.btn-dark {
-  background-color: #343a40; /* Dark Gray */
-  color: white;
-  border-color: #343a40; /* Dark Gray */
-}
-
-.btn-dark:hover {
-  background-color: #23272b; /* Even Darker Gray */
-}
-
-.social-media {
-  margin-top: 20px;
-}
-
-.social-media a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+/* Footer styles */
+.footer-icon {
+  width: 30px;
+  height: 30px;
   margin: 0 10px;
 }
 
-.social-media a:hover {
-  text-decoration: underline;
+.footer-icon:hover {
+  opacity: 0.8;
 }
 
-.img-fluid {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto;
-}
-
-img {
-  max-width: 80%; /* Adjust to make images more eye-catching */
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5em; /* Responsive font size for smaller screens */
-  }
-
-  .hero p {
-    font-size: 1.25em; /* Responsive font size */
-  }
-
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.social-media a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0 15px;
 }

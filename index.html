@@ -10,29 +10,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="scripts.js" defer></script>
-  <style>
-    .navbar-toggler {
-      border: none;
-    }
-    .navbar-toggler-icon {
-      background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23000000" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
-    }
-    .navbar-collapse {
-      background-color: #e3f2fd; /* Light Blue */
-    }
-    .navbar-nav .nav-link {
-      color: #343a40; /* Dark Gray */
-    }
-    .navbar-nav .nav-link:hover {
-      color: #007bff; /* Blue for hover effect */
-    }
-  </style>
 </head>
 <body>
   <header class="bg-light text-dark py-3">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <img src="my-logo-placeholder.webp" alt="XETU Logo" class="logo">
+        <a href="#home">
+          <img src="my-logo-placeholder.webp" alt="XETU Logo" class="logo">
+        </a>
         <nav class="d-none d-md-block">
           <ul class="nav">
             <li class="nav-item"><a class="nav-link text-dark" href="#home">Home</a></li>
@@ -58,10 +43,10 @@
     </div>
   </header>
 
-  <section id="home" class="hero bg-light-blue text-center text-dark py-5">
+  <section id="home" class="hero text-center py-5">
     <div class="container">
       <h1 class="display-3">Welcome to XETU (Xpress Easy Transport Utility)</h1>
-      <p class="lead">XETU হৈছে এক সেতুৰ দৰে যি খালি ঠাইবোৰ পূৰণ কৰি বিভিন্ন স্থানবোৰ সংযোগ কৰে। ঠিক তেনেই, XETU আপোনাৰ আৰু স্থানীয় eRickshaw চালকৰ মাজত এক গুৰুত্বপূর্ণ সংযোগ হিচাপে কাম কৰে। আমাৰ এপ্লিকেচন আপোনাৰ পৰিবহণৰ প্ৰয়োজন আৰু জীবন্ত eRickshaw সমাজৰ মাজৰ দূৰত্ব দূৰ কৰে, আপোনাৰ যাত্ৰা অভিজ্ঞতা সহজ আৰু লাভনীয় কৰি তোলে।</p>
+      <p class="lead">XETU হৈছে এক সেতুৰ দৰে যি খালি ঠাইবোৰ পূৰণ কৰি বিভিন্ন স্থানবোৰ সংযোগ কৰে। ঠিক তেনেই, XETU আপোনাৰ আৰু স্থানীয় eRickshaw চালকৰ মাজত এক গুৰুত্বপূর্ণ সংযোগ হিচাপে কাম কৰে। আমাৰ এপ্লিকেচন আপোনাৰ পৰিবহণৰ প্ৰয়োজন আৰু জীৱন্ত eRickshaw সমাজৰ মাজৰ দূৰত্ব দূৰ কৰে, আপোনাৰ যাত্ৰা অভিজ্ঞতা সহজ আৰু লাভনীয় কৰি তোলে।</p>
       <a href="#contact" class="btn btn-dark btn-lg">Coming Soon!</a>
     </div>
   </section>
@@ -106,9 +91,15 @@
       <p>Scan the QR code below to download the XETU app:</p>
       <img src="qr-placeholder.webp" alt="XETU App QR Code" class="img-fluid" style="width: 200px;">
       <div class="social-media mt-3">
-        <a href="#" class="text-white mx-2">Facebook</a>
-        <a href="#" class="text-white mx-2">X</a>
-        <a href="#" class="text-white mx-2">Instagram</a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" class="footer-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" class="footer-icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="footer-icon">
+        </a>
       </div>
     </div>
   </footer>
