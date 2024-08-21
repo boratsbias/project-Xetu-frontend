@@ -1,57 +1,57 @@
-/* General styles */
-.navbar-toggler {
-  border: none;
+/* styles.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-.navbar-toggler-icon {
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="%23000000" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+h1, h2 {
+  font-family: 'Arial', sans-serif;
 }
 
-.navbar-collapse {
-  background-color: #e3f2fd; /* Light Blue */
-}
-
-.navbar-nav .nav-link {
-  color: #343a40; /* Dark Gray */
-}
-
-.navbar-nav .nav-link:hover {
-  color: #007bff; /* Blue for hover effect */
-}
-
-/* Logo styles */
 .logo {
-  width: 80px; /* Adjusted width for smaller logo */
+  width: 150px;
 }
 
-/* Hero section */
 .hero {
-  background-color: #e3f2fd; /* Light Blue */
-  color: #343a40; /* Dark Gray */
+  background-color: #f8f9fa;
 }
 
-/* About, Plans, Community sections */
 .bg-light-gray {
-  background-color: #f8f9fa; /* Light Gray */
+  background-color: #f1f1f1;
 }
 
-.display-4 {
-  font-size: 2.5rem; /* Adjust font size for headings */
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Footer styles */
-.footer-icon {
-  width: 30px;
-  height: 30px;
+footer {
+  background-color: #343a40;
+  color: white;
+}
+
+footer img.footer-icon {
+  width: 40px;
   margin: 0 10px;
 }
 
-.footer-icon:hover {
-  opacity: 0.8;
+/* Responsive styling */
+@media (min-width: 768px) {
+  .order-md-1 {
+      order: 1;
+  }
+  .order-md-2 {
+      order: 2;
+  }
 }
 
-.social-media a {
-  font-size: 1.5rem;
-  color: #ffffff;
-  margin: 0 15px;
+/* Navbar styling */
+.navbar-toggler {
+  background-color: #343a40;
+}
+
+.navbar-toggler-icon {
+  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/menu.png');
 }
