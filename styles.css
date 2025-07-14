@@ -6,8 +6,9 @@ body {
   line-height: 1.6;
 }
 
-h1, h2 {
-  font-family: 'Arial', sans-serif;
+h1,
+h2 {
+  font-family: "Arial", sans-serif;
 }
 
 .logo {
@@ -47,12 +48,50 @@ footer img.footer-icon {
   }
 }
 
+/* Active navigation link styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+/* Image loading animation */
+img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+img.loaded {
+  opacity: 1;
+}
+
+/* Mobile menu improvements */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 2px 0;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #f8f9fa;
+  }
+}
+
 /* Navbar styling */
 .navbar-toggler {
   background-color: #343a40;
 }
 
 .navbar-toggler-icon {
-  background-image: url('https://img.icons8.com/ios-filled/50/ffffff/menu.png');
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUgMTBIMjVNNyAxNUgyM001IDEwSDI1IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
