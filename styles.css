@@ -187,33 +187,50 @@ img {
     font-size: 2rem;
   }
 
+  /* Show navigation on mobile but make it compact */
+  nav.d-none.d-md-block {
+    display: block !important;
+  }
+
+  /* Make navigation horizontal and compact on mobile */
+  nav.d-none.d-md-block .nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  nav.d-none.d-md-block .nav-link {
+    font-size: 0.8rem !important;
+    padding: 4px 8px !important;
+    margin: 0 !important;
+  }
+
+  /* Hide the hamburger menu button on mobile */
+  .navbar-toggler {
+    display: none !important;
+  }
+
+  /* Hide the mobile collapse menu */
   .navbar-collapse {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
-    margin-top: 10px;
-    padding: 15px;
-  }
-
-  .navbar-nav .nav-link {
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 2px 0;
-  }
-
-  .navbar-nav .nav-link:hover {
-    background-color: rgba(59, 130, 246, 0.1) !important;
-    color: #3b82f6 !important;
+    display: none !important;
   }
 }
 
 /* Navbar styling */
 .navbar-toggler {
-  background-color: #3b82f6;
-  border: none;
+  background-color: transparent;
+  border: 2px solid #374151;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: #6b7280;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMTJIMjFNNyA4SDE3TTcgMTZIMTciIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMTJIMjFNNyA4SDE3TTcgMTZIMTciIHN0cm9rZT0iIzM3NDE1MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
