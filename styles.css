@@ -175,9 +175,9 @@ img.img-fluid {
   }
 }
 
-/* Image loading animation */
+/* Image loading - make images visible by default */
 img {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
