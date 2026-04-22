@@ -3,233 +3,534 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XETU - eRickshaw Booking</title>
+    <title>XETU — Book an eRickshaw in Golaghat via WhatsApp</title>
 
     <!-- SEO -->
-    <meta name="description" content="XETU - eRickshaw booking service in Golaghat, Assam. Book your ride instantly via WhatsApp. Xpress Easy Transport Utility." />
-    <meta name="keywords" content="eRickshaw, Golaghat, Assam, ride booking, XETU, WhatsApp transport" />
+    <meta name="description" content="XETU is the fastest way to book an eRickshaw in Golaghat, Assam. No app needed — just WhatsApp. Xpress Easy Transport Utility." />
+    <meta name="keywords" content="eRickshaw, Golaghat, Assam, ride booking, XETU, WhatsApp transport, auto booking, electric rickshaw" />
+    <meta name="theme-color" content="#0b1220" />
     <link rel="canonical" href="https://www.xetu.in/" />
 
-    <!-- Open Graph (WhatsApp / Facebook link previews) -->
-    <meta property="og:title" content="XETU - eRickshaw Booking" />
-    <meta property="og:description" content="Book your eRickshaw in Golaghat, Assam instantly via WhatsApp." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="XETU — Book an eRickshaw in Golaghat via WhatsApp" />
+    <meta property="og:description" content="The fastest way to book an eRickshaw in Golaghat, Assam. No app needed — just WhatsApp." />
     <meta property="og:image" content="https://www.xetu.in/my-logo-placeholder.webp" />
     <meta property="og:url" content="https://www.xetu.in" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="XETU - eRickshaw Booking" />
-    <meta name="twitter:description" content="Book your eRickshaw in Golaghat, Assam instantly via WhatsApp." />
+    <meta name="twitter:title" content="XETU — Book an eRickshaw in Golaghat via WhatsApp" />
+    <meta name="twitter:description" content="The fastest way to book an eRickshaw in Golaghat, Assam. No app needed — just WhatsApp." />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="bg-light text-dark py-3">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <a href="#home">
-            <img src="my-logo-placeholder.webp" alt="XETU Logo" class="logo" />
+    <!-- ── Announcement bar ───────────────────────────── -->
+    <div class="announcement">
+      <div class="announcement-inner">
+        <span class="announcement-dot" aria-hidden="true"></span>
+        <span>Now serving Golaghat, Assam · Available 7 days a week</span>
+      </div>
+    </div>
+
+    <!-- ── Navigation ─────────────────────────────────── -->
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-inner">
+        <a href="#home" class="brand" aria-label="XETU Home">
+          <img src="my-logo-placeholder.webp" alt="XETU" class="brand-logo" />
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">Why XETU</a>
+          <a href="#how" class="nav-link">How it works</a>
+          <a href="#plans" class="nav-link">Vision</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-cta-wrap">
+          <a
+            href="https://wa.me/916002933403"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-sm nav-cta"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="icon-sm">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Book on WhatsApp
           </a>
-          <nav>
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#plans">Plans</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#community">Community</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </header>
 
-    <section id="home" class="hero text-center py-5">
-      <div class="container">
-        <h1 class="display-3">
-          Welcome to XETU (Xpress Easy Transport Utility)
-        </h1>
-        <p class="lead" lang="as">
-          XETU হৈছে এক সেতুৰ দৰে, যি Golaghat-ৰ মানুহ আৰু স্থানীয় eRickshaw
-          চালকৰ মাজত সংযোগ স্থাপন কৰে। আমাৰ এপ্লিকেচন আপোনাৰ পৰিবহণৰ প্ৰয়োজন
-          সহজ আৰু লাভনীয় কৰি তোলে।
-        </p>
+      <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">Why XETU</a>
+        <a href="#how" class="nav-link">How it works</a>
+        <a href="#plans" class="nav-link">Vision</a>
+        <a href="#contact" class="nav-link">Contact</a>
         <a
           href="https://wa.me/916002933403"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-success btn-lg whatsapp-btn"
+          class="btn btn-whatsapp"
         >
-          <img
-            src="https://img.icons8.com/color/24/whatsapp--v1.png"
-            alt="WhatsApp"
-            class="whatsapp-icon"
-          />
-          Book Your Ride
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="icon-sm">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Book on WhatsApp
         </a>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="cartoon-placeholder.webp"
-              alt="About Us Cartoon"
-              class="img-fluid"
-              loading="lazy"
-            />
+    <main>
+      <!-- ── Hero ────────────────────────────────────── -->
+      <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-blob hero-blob-1"></div>
+          <div class="hero-blob hero-blob-2"></div>
+          <div class="hero-grid"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-pill">
+            <span class="hero-pill-dot" aria-hidden="true"></span>
+            Xpress Easy Transport Utility
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h2 class="display-4">About Us</h2>
-            <p>
+
+          <h1 class="hero-title">
+            Book an eRickshaw in Golaghat,
+            <span class="text-gradient">instantly on WhatsApp</span>
+          </h1>
+
+          <p class="hero-sub">
+            No app downloads. No sign-ups. Just message us and get connected with
+            a nearby eRickshaw driver in seconds.
+          </p>
+
+          <p class="hero-sub-as" lang="as">
+            XETU হৈছে এক সেতুৰ দৰে, যি Golaghat-ৰ মানুহ আৰু স্থানীয় eRickshaw
+            চালকৰ মাজত সংযোগ স্থাপন কৰে।
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://wa.me/916002933403"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-whatsapp btn-lg"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="icon">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Book Your Ride
+            </a>
+            <a href="#how" class="btn btn-ghost btn-lg">
+              How it works
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              No app required
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Local drivers
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Instant booking
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Why XETU (features) ─────────────────────── -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Why XETU</span>
+            <h2 class="section-title">Built for Golaghat. Made simple.</h2>
+            <p class="section-lead">
               XETU is an eRickshaw booking service designed to make local travel
-              easy and reliable. We connect residents with nearby eRickshaw
-              drivers for a smooth, accessible ride experience in Golaghat.
+              easy and reliable — connecting residents with nearby drivers for a
+              smooth, accessible ride.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="plans" class="bg-light-gray py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 order-md-2">
-            <img
-              src="plan-placeholder.webp"
-              alt="Plans Cartoon"
-              class="img-fluid"
-              loading="lazy"
-            />
+          <div class="feature-grid">
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+              </div>
+              <h3>WhatsApp-first</h3>
+              <p>No app downloads or sign-ups. Book with a message on the chat app you already have.</p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 6v4l3 2" />
+                </svg>
+              </div>
+              <h3>Instant booking</h3>
+              <p>Get connected with a nearby driver in seconds. No waiting, no back-and-forth.</p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-orange">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3>Hyper-local</h3>
+              <p>Built for Golaghat. Our drivers know every lane, market and shortcut in town.</p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3>Community-driven</h3>
+              <p>Every ride empowers a local driver and strengthens Golaghat's economy.</p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                  <path d="m2 17 10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h3>Clean & green</h3>
+              <p>Every eRickshaw is electric — quieter streets and zero tailpipe emissions.</p>
+            </article>
+
+            <article class="feature-card" data-reveal>
+              <div class="feature-icon feature-icon-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </div>
+              <h3>Human, not faceless</h3>
+              <p>Real people, real conversations. Just text us like you'd text a friend.</p>
+            </article>
           </div>
-          <div
-            class="col-md-6 order-md-1 d-flex flex-column justify-content-center"
-          >
-            <h2 class="display-4">Plans</h2>
+        </div>
+      </section>
+
+      <!-- ── How it works ────────────────────────────── -->
+      <section id="how" class="section section-alt">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">How it works</span>
+            <h2 class="section-title">Three steps. Ride in minutes.</h2>
+            <p class="section-lead">From message to moving in under a minute.</p>
+          </div>
+
+          <div class="steps">
+            <div class="step" data-reveal>
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h3>Scan or tap WhatsApp</h3>
+                <p>Scan the QR code on this page or tap the WhatsApp button. That's it — no app needed.</p>
+              </div>
+            </div>
+
+            <div class="step-divider" aria-hidden="true"></div>
+
+            <div class="step" data-reveal>
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h3>Share your pickup</h3>
+                <p>Send us your location (or type it out) along with where you want to go.</p>
+              </div>
+            </div>
+
+            <div class="step-divider" aria-hidden="true"></div>
+
+            <div class="step" data-reveal>
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h3>Hop on and go</h3>
+                <p>We connect you with a nearby driver. They'll arrive in minutes, ready to take you there.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── About image split ───────────────────────── -->
+      <section class="section">
+        <div class="container split">
+          <div class="split-media" data-reveal>
+            <img src="cartoon-placeholder.webp" alt="XETU community illustration" loading="lazy" />
+          </div>
+          <div class="split-content" data-reveal>
+            <span class="eyebrow">Our story</span>
+            <h2 class="section-title">A small bridge. A big difference.</h2>
             <p>
-              We aim to expand XETU across Assam and India, bringing better
-              urban mobility to more communities. Our goal is to keep improving
-              and reach even more people in the future.
+              XETU — "সেতু" means bridge in Assamese — is exactly that: a bridge
+              between the people of Golaghat and the drivers who keep the city
+              moving. We started with one belief: getting a ride should be as
+              easy as sending a message.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="community" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img
-              src="community-placeholder.webp"
-              alt="Community Cartoon"
-              class="img-fluid"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-md-6">
-            <h2 class="display-4">Community</h2>
             <p>
-              Join our community to stay updated and connected with the latest
-              news and developments from XETU.
+              Today we connect residents with nearby eRickshaw drivers for a
+              smooth, accessible ride experience, while putting more of every
+              fare back into the local economy.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="bg-light-gray py-5">
-      <div class="container">
-        <h2 class="display-4 text-center mb-4">Contact Us</h2>
-        <p class="text-center mb-4">
-          For any inquiries or support, please contact our team
-        </p>
-        <div class="contact-details mx-auto">
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">📞</span>
-            <a href="tel:+916002933403">+91 6002933403</a>
+      <!-- ── Vision / Plans ──────────────────────────── -->
+      <section id="plans" class="section section-alt">
+        <div class="container split split-reverse">
+          <div class="split-media" data-reveal>
+            <img src="plan-placeholder.webp" alt="Growth map illustration" loading="lazy" />
           </div>
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">✉️</span>
+          <div class="split-content" data-reveal>
+            <span class="eyebrow">Vision</span>
+            <h2 class="section-title">Beyond Golaghat. Across Assam. Then India.</h2>
+            <p>
+              We aim to expand XETU across Assam and India, bringing better urban
+              mobility to more communities — one town, one district, one state at
+              a time.
+            </p>
+            <ul class="checklist">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                More towns across Upper Assam
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Multi-language support (Assamese, Hindi, English)
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Real-time ride tracking
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="icon-sm">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+                Better tools and earnings for our drivers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Community ───────────────────────────────── -->
+      <section id="community" class="section">
+        <div class="container split">
+          <div class="split-media" data-reveal>
+            <img src="community-placeholder.webp" alt="Community illustration" loading="lazy" />
+          </div>
+          <div class="split-content" data-reveal>
+            <span class="eyebrow">Community</span>
+            <h2 class="section-title">Built by Golaghat, for Golaghat.</h2>
+            <p>
+              Join our community to stay updated on new areas, features, and
+              stories from our drivers and riders. We grow when the community
+              grows.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="https://wa.me/916002933403"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+              >
+                Join on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA / QR ────────────────────────────────── -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-card" data-reveal>
+            <div class="cta-content">
+              <span class="eyebrow eyebrow-light">Ready when you are</span>
+              <h2>Book Your Ride</h2>
+              <p>Scan the QR code, or tap to open WhatsApp. That's all it takes.</p>
+              <a
+                href="https://wa.me/916002933403"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp btn-lg"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="icon">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Open WhatsApp
+              </a>
+            </div>
+            <a
+              href="https://wa.me/916002933403"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-qr"
+              aria-label="Scan to book on WhatsApp"
+            >
+              <img src="xetu-qr.webp" alt="XETU WhatsApp QR code" loading="lazy" />
+              <span class="cta-qr-label">Scan to book</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Contact ─────────────────────────────────── -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">Got a question? We're here.</h2>
+            <p class="section-lead">For any inquiries or support, reach out anytime.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a href="tel:+916002933403" class="contact-card" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Call us</div>
+                <div class="contact-value">+91 6002 933 403</div>
+              </div>
+            </a>
+
+            <a href="mailto:support@xetu.in" class="contact-card" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="m22 6-10 7L2 6" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email us</div>
+                <div class="contact-value">support@xetu.in</div>
+              </div>
+            </a>
+
+            <div class="contact-card" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Find us</div>
+                <div class="contact-value">Golaghat, Assam, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="my-logo-placeholder.webp" alt="XETU" class="footer-logo" />
+            <p>Xpress Easy Transport Utility — a WhatsApp-first eRickshaw booking service for Golaghat, Assam.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Explore</h4>
+            <a href="#home">Home</a>
+            <a href="#about">Why XETU</a>
+            <a href="#how">How it works</a>
+            <a href="#plans">Vision</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-links">
+            <h4>Get in touch</h4>
+            <a href="tel:+916002933403">+91 6002 933 403</a>
             <a href="mailto:support@xetu.in">support@xetu.in</a>
+            <a href="https://wa.me/916002933403" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
-          <div class="contact-item">
-            <span class="contact-icon" aria-hidden="true">📍</span>
-            <span>Golaghat, Assam, India</span>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Book Your Ride Section -->
-    <section class="download-cta">
-      <div class="download-cta-inner">
-        <div class="download-qr">
-          <a href="https://wa.me/916002933403" target="_blank" rel="noopener noreferrer">
-            <img
-              src="xetu-qr.webp"
-              alt="XETU Service QR Code"
-              class="img-fluid"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <div class="download-content">
-          <h2>Book Your Ride</h2>
-          <p>Scan the QR code to book your ride via WhatsApp</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="footer-main">
-        <div class="footer-social">
-          <div class="footer-social-label">Follow us</div>
-          <div class="footer-social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on Facebook">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
-                alt=""
-                class="footer-icon"
-              />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on Twitter">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"
-                alt=""
-                class="footer-icon"
-              />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on Instagram">
-              <img
-                src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
-                alt=""
-                class="footer-icon"
-              />
-            </a>
+          <div class="footer-social">
+            <h4>Follow us</h4>
+            <div class="footer-social-icons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="XETU on Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.2c3.2 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.417 2.212 8.796 2.2 12 2.2zm0-2.2C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
+
+        <div class="footer-bottom">
+          <span>&copy; <span id="year">2026</span> XETU. All rights reserved.</span>
+          <span>Made with care in Golaghat, Assam</span>
+        </div>
       </div>
-      <div class="footer-copyright">&copy; 2026 XETU. All rights reserved.</div>
     </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
