@@ -1,4 +1,6 @@
-/* Enhanced styles.css - Cleaned up version */
+/* ============================================================
+   XETU – styles.css
+   ============================================================ */
 
 /* General styling */
 body {
@@ -28,7 +30,75 @@ h3 {
   font-size: 1.6rem;
 }
 
-/* Enhanced Hero Section */
+/* Hyperlink styling */
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* ── Logo ─────────────────────────────────────────── */
+.logo {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* ── Navigation ───────────────────────────────────── */
+.nav-link {
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+  background: none !important;
+}
+
+.nav-link:hover {
+  color: #2563eb !important;
+  background: none !important;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #2563eb !important;
+  background: none !important;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  header nav .nav {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  header nav .nav-link {
+    font-size: 0.8rem !important;
+    padding: 4px 8px !important;
+  }
+}
+
+/* ── Hero Section ─────────────────────────────────── */
 .hero {
   background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
   color: white;
@@ -51,26 +121,17 @@ h3 {
   margin: 0 auto 2rem;
 }
 
-/* Enhanced Buttons - Only used styles */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ── Buttons ──────────────────────────────────────── */
 .btn {
   transition: all 0.3s ease;
   border-radius: 8px;
   font-weight: 500;
-}
-
-.btn-dark {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
-  border: none;
-  padding: 12px 30px;
-  box-shadow: 0 4px 15px rgba(31, 41, 55, 0.3);
-  color: white;
-}
-
-.btn-dark:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(31, 41, 55, 0.4);
-  color: white;
-  background: linear-gradient(135deg, #111827 0%, #000000 100%);
 }
 
 .btn-lg {
@@ -78,82 +139,57 @@ h3 {
   font-size: 1.1rem;
 }
 
-/* Enhanced Logo */
-.logo {
-  width: 150px;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-/* Enhanced Navigation */
-.nav-link {
-  font-weight: 500;
-  transition: color 0.2s;
-  position: relative;
-  padding: 0.5rem 1rem !important;
-  border-radius: 6px;
-  background: none !important;
-}
-
-.nav-link:hover {
-  color: #2563eb !important;
-  background: none !important;
-  transform: none;
-}
-
-.nav-link.active {
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 14px 32px;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: #2563eb !important;
-  background: none !important;
+  border-radius: 8px;
+  background-color: #25d366;
+  border-color: #25d366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
 }
 
-.nav-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 3px;
-  background: #2563eb;
-  border-radius: 2px;
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  background-color: #1ebe5d;
+  border-color: #1ebe5d;
+  color: white;
+  text-decoration: none;
 }
 
-/* Mobile navigation enhancements */
-.navbar-nav .nav-link {
-  transition: color 0.2s;
-  border-radius: 6px;
-  margin: 2px 0;
-  background: none !important;
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
-.navbar-nav .nav-link:hover {
-  background: none !important;
-  color: #2563eb !important;
-  transform: none;
+/* ── Images ───────────────────────────────────────── */
+img {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link.active {
-  background: none !important;
-  color: #2563eb !important;
-  font-weight: 600;
-}
-
-/* Normal Images */
-img.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Enhanced Background Colors */
+/* ── Background Colors ────────────────────────────── */
 .bg-light-gray {
   background-color: #fafbfc;
 }
 
-/* Contact Us Section */
+/* ── Responsive order helpers ─────────────────────── */
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: 1;
+  }
+  .order-md-2 {
+    order: 2;
+  }
+}
+
+/* ── Contact Section ──────────────────────────────── */
 #contact {
   background: #fafbfc;
   padding-top: 4rem;
@@ -165,152 +201,53 @@ img.img-fluid {
   margin-bottom: 0.5rem;
 }
 
-/* Responsive styling */
-@media (min-width: 768px) {
-  .order-md-1 {
-    order: 1;
-  }
-  .order-md-2 {
-    order: 2;
-  }
+#contact .display-4 {
+  margin-bottom: 0.3rem;
 }
 
-/* Image loading - make images visible by default */
-img {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+#contact .text-center.mb-4 {
+  margin-bottom: 0.3rem !important;
 }
 
-/* Mobile menu improvements */
-@media (max-width: 767px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  /* Show navigation on mobile but make it compact */
-  nav.d-none.d-md-block {
-    display: block !important;
-  }
-
-  /* Make navigation horizontal and compact on mobile */
-  nav.d-none.d-md-block .nav {
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-
-  nav.d-none.d-md-block .nav-link {
-    font-size: 0.8rem !important;
-    padding: 4px 8px !important;
-    margin: 0 !important;
-  }
-
-  /* Hide the hamburger menu button on mobile */
-  .navbar-toggler {
-    display: none !important;
-  }
-
-  /* Hide the mobile collapse menu */
-  .navbar-collapse {
-    display: none !important;
-  }
-}
-
-/* Navbar styling */
-.navbar-toggler {
-  background-color: transparent;
-  border: 2px solid #374151;
-  border-radius: 6px;
-  padding: 6px 10px;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-  border-color: #6b7280;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMTJIMjFNNyA4SDE3TTcgMTZIMTciIHN0cm9rZT0iIzM3NDE1MSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Modern Footer */
-footer {
-  background: #232b36;
-  color: #f8fafc;
-  padding: 2.5rem 0 0.5rem;
-  border-top: 2.5px solid #1d2530;
-  position: relative;
-  text-align: left;
-}
-
-.footer-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.5rem;
-  max-width: 1100px;
-  margin: 0 auto 1.5rem auto;
-  flex-wrap: wrap;
-}
-
-.footer-social {
-  flex: 0 0 auto;
+.contact-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.15rem;
+  max-width: 350px;
+  margin: 0.05rem auto 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.footer-social-label {
-  color: #cbd5e1;
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
-}
-
-.footer-social-icons {
+.contact-item {
   display: flex;
-  gap: 1.1rem;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.18rem;
+  color: #232b36;
 }
 
-.footer-icon {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1) grayscale(0.2);
-  opacity: 0.85;
-  transition: transform 0.2s, opacity 0.2s, filter 0.2s;
+.contact-item a {
+  color: #232b36;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.footer-icon:hover {
-  transform: scale(1.13) translateY(-2px);
-  opacity: 1;
-  filter: brightness(1.2) invert(0.1) sepia(1) saturate(2) hue-rotate(180deg);
+.contact-item a:hover,
+.contact-item a:focus {
+  color: #2563eb;
+  text-decoration: underline;
 }
 
-.footer-copyright {
-  text-align: center;
-  color: #a0aec0;
-  font-size: 1.08rem;
-  margin-top: 1.2rem;
-  padding-bottom: 0.5rem;
-  letter-spacing: 0.1px;
+.contact-icon {
+  font-size: 1.5rem;
+  color: #3b82f6;
 }
 
-@media (max-width: 900px) {
-  .footer-main {
-    flex-direction: column;
-    align-items: center;
-    gap: 2.2rem;
-    text-align: center;
-  }
-  .footer-social {
-    align-items: center;
-  }
-}
-
-/* Download CTA Section */
+/* ── Download / Book Your Ride Section ───────────── */
 .download-cta {
   background: #fafbfc;
   padding: 3.5rem 0 2.5rem 0;
@@ -383,60 +320,75 @@ footer {
   }
 }
 
-/* Contact Us Section */
-.contact-details {
+/* ── Footer ───────────────────────────────────────── */
+footer {
+  background: #232b36;
+  color: #f8fafc;
+  padding: 2.5rem 0 0.5rem;
+  border-top: 2.5px solid #1d2530;
+  text-align: left;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem auto;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.15rem;
-  max-width: 350px;
-  margin: 0 auto;
-  padding: 0;
-  background: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
   gap: 0.7rem;
-  font-size: 1.18rem;
-  color: #232b36;
 }
 
-.contact-icon {
-  font-size: 1.5rem;
-  color: #3b82f6;
+.footer-social-label {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
 }
 
-@media (max-width: 600px) {
-  .contact-details {
-    padding: 0;
+.footer-social-icons {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1) grayscale(0.2);
+  opacity: 0.85;
+  transition: transform 0.2s, opacity 0.2s, filter 0.2s;
+}
+
+.footer-icon:hover {
+  transform: scale(1.13) translateY(-2px);
+  opacity: 1;
+  filter: brightness(1.2) invert(0.1) sepia(1) saturate(2) hue-rotate(180deg);
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 1.08rem;
+  margin-top: 1.2rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
   }
-}
-
-#contact .display-4 {
-  margin-bottom: 0.3rem;
-}
-
-#contact .text-center.mb-4 {
-  margin-bottom: 0.3rem !important;
-}
-
-.contact-details {
-  margin-top: 0.05rem;
-}
-
-/* Hyperlink styling */
-a {
-  color: #1d4ed8;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:hover,
-a:focus {
-  color: #2563eb;
-  text-decoration: underline;
+  .footer-social {
+    align-items: center;
+  }
 }

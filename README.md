@@ -92,11 +92,11 @@ npx http-server
 
 ## 🌐 Website
 
-Visit our website: [XETU eRickshaw Booking](https://boratsbias.github.io/project-Xetu-frontend/)
+Visit our website: [XETU eRickshaw Booking](https://www.xetu.in)
 
 ## 📄 License
 
-© 2025 XETU. All rights reserved.
+© 2026 XETU. All rights reserved.
 
 ## 🤝 Contributing
 
