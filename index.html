@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -45,7 +45,7 @@
     </div>
 
     <!-- ── Navigation ─────────────────────────────────── -->
-    <header class="site-header" id="siteHeader">
+    <header class="site-header">
       <div class="container nav-inner">
         <a href="#home" class="brand" aria-label="XETU Home">
           <img src="my-logo-placeholder.webp" alt="XETU" class="brand-logo" />
@@ -203,19 +203,8 @@
                   <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 6v4l3 2" />
                 </svg>
               </div>
-              <h3>Instant booking</h3>
-              <p>Get connected with a nearby driver in seconds. No waiting, no back-and-forth.</p>
-            </article>
-
-            <article class="feature-card" data-reveal>
-              <div class="feature-icon feature-icon-orange">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
-              <h3>Hyper-local</h3>
-              <p>Built for Golaghat. Our drivers know every lane, market and shortcut in town.</p>
+              <h3>Instant and hyper-local</h3>
+              <p>A nearby driver in seconds. Ours know every lane, market and shortcut in town.</p>
             </article>
 
             <article class="feature-card" data-reveal>
@@ -226,36 +215,15 @@
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               </div>
-              <h3>Community-driven</h3>
-              <p>Every ride empowers a local driver and strengthens Golaghat's economy.</p>
-            </article>
-
-            <article class="feature-card" data-reveal>
-              <div class="feature-icon feature-icon-pink">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M12 2 2 7l10 5 10-5-10-5z" />
-                  <path d="m2 17 10 5 10-5M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <h3>Clean & green</h3>
-              <p>Every eRickshaw is electric, with quieter streets and zero tailpipe emissions.</p>
-            </article>
-
-            <article class="feature-card" data-reveal>
-              <div class="feature-icon feature-icon-teal">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-              </div>
-              <h3>Human, not faceless</h3>
-              <p>Real people, real conversations. Just text us like you'd text a friend.</p>
+              <h3>Community-driven and electric</h3>
+              <p>Every eRickshaw is electric, and every fare puts more back into Golaghat's economy.</p>
             </article>
           </div>
         </div>
       </section>
 
       <!-- ── How it works ────────────────────────────── -->
-      <section id="how" class="section section-alt">
+      <section id="how" class="section">
         <div class="container">
           <div class="section-header" data-reveal>
             <span class="eyebrow">How it works</span>
@@ -263,35 +231,31 @@
             <p class="section-lead">From message to moving in under a minute.</p>
           </div>
 
-          <div class="steps">
-            <div class="step" data-reveal>
+          <ol class="steps">
+            <li class="step" data-reveal>
               <div class="step-number">01</div>
               <div class="step-content">
                 <h3>Scan or tap WhatsApp</h3>
                 <p>Scan the QR code on this page or tap the WhatsApp button. That's it: no app needed.</p>
               </div>
-            </div>
+            </li>
 
-            <div class="step-divider" aria-hidden="true"></div>
-
-            <div class="step" data-reveal>
+            <li class="step" data-reveal>
               <div class="step-number">02</div>
               <div class="step-content">
                 <h3>Share your pickup</h3>
                 <p>Send us your location (or type it out) along with where you want to go.</p>
               </div>
-            </div>
+            </li>
 
-            <div class="step-divider" aria-hidden="true"></div>
-
-            <div class="step" data-reveal>
+            <li class="step" data-reveal>
               <div class="step-number">03</div>
               <div class="step-content">
                 <h3>Hop on and go</h3>
                 <p>We connect you with a nearby driver. They'll arrive in minutes, ready to take you there.</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -320,7 +284,7 @@
       </section>
 
       <!-- ── Vision / Plans ──────────────────────────── -->
-      <section id="plans" class="section section-alt">
+      <section id="plans" class="section">
         <div class="container split split-reverse">
           <div class="split-media" data-reveal>
             <img src="plan-placeholder.webp" alt="Growth map illustration" loading="lazy" />
@@ -391,6 +355,57 @@
         </div>
       </section>
 
+      <!-- ── Contact ─────────────────────────────────── -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">Got a question? We're here.</h2>
+            <p class="section-lead">For any inquiries or support, reach out anytime.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a href="tel:+916002933403" class="contact-item" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Call us</div>
+                <div class="contact-value">+91 6002 933 403</div>
+              </div>
+            </a>
+
+            <a href="mailto:support@xetu.in" class="contact-item" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <path d="m22 6-10 7L2 6" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email us</div>
+                <div class="contact-value">support@xetu.in</div>
+              </div>
+            </a>
+
+            <div class="contact-item" data-reveal>
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Find us</div>
+                <div class="contact-value">Golaghat, Assam, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ── CTA / QR ────────────────────────────────── -->
       <section class="cta-section">
         <div class="container">
@@ -421,57 +436,6 @@
               <img src="xetu-qr.webp" alt="XETU WhatsApp QR code" loading="lazy" />
               <span class="cta-qr-label">Scan to book</span>
             </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── Contact ─────────────────────────────────── -->
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="section-header" data-reveal>
-            <span class="eyebrow">Contact</span>
-            <h2 class="section-title">Got a question? We're here.</h2>
-            <p class="section-lead">For any inquiries or support, reach out anytime.</p>
-          </div>
-
-          <div class="contact-grid">
-            <a href="tel:+916002933403" class="contact-card" data-reveal>
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Call us</div>
-                <div class="contact-value">+91 6002 933 403</div>
-              </div>
-            </a>
-
-            <a href="mailto:support@xetu.in" class="contact-card" data-reveal>
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <path d="m22 6-10 7L2 6" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Email us</div>
-                <div class="contact-value">support@xetu.in</div>
-              </div>
-            </a>
-
-            <div class="contact-card" data-reveal>
-              <div class="contact-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
-              <div>
-                <div class="contact-label">Find us</div>
-                <div class="contact-value">Golaghat, Assam, India</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>

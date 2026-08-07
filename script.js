@@ -1,15 +1,6 @@
 (() => {
   "use strict";
 
-  /* Sticky header shadow on scroll */
-  const header = document.getElementById("siteHeader");
-  const onScroll = () => {
-    if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 8);
-  };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
-
   /* Mobile menu */
   const toggle = document.getElementById("navToggle");
   const menu = document.getElementById("navMobile");
